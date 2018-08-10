@@ -24,11 +24,6 @@ class CommonCopyToClipboard extends Component {
             return conditionArray;
         }
         switch (typePic) {
-            case 'icon':
-                conditionArray = (
-                    <p>我是 icon stype</p>
-                );
-                break;
             case 'button':
                 conditionArray = (
                     <button>复制</button>
