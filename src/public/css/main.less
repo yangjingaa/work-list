@@ -1,0 +1,122 @@
+:global {
+  html, body, #root {
+    height: 100%;
+    position: relative;
+  }
+
+  * {
+    font-family: "Monospaced Number", "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  #wm_div_id {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ant-notification-notice-description {
+    word-break: break-all;
+  }
+
+  .ant-table-body {
+    .ant-table-thead {
+      th {
+        text-align: center;
+      }
+    }
+  }
+
+  .ant-table-fixed {
+    .ant-table-thead {
+      th {
+        text-align: center;
+      }
+    }
+
+  }
+
+  .ant-divider-horizontal {
+    margin: 15px 0 !important;
+  }
+
+  .tableColumn {
+    text-align: center;
+  }
+
+  .inputNumber {
+    height: 20px;
+    line-height: 20px;
+  }
+
+  .ant-input-number {
+    width: 110px;
+  }
+
+  .ant-spin-blur {
+    opacity: 0.95;
+  }
+
+  .ant-select {
+    width: 100%;
+  }
+
+  .ant-pagination-options {
+    .ant-select {
+      width: auto;
+    }
+  }
+
+  .ant-select-tree li {
+    margin: 5px 0;
+  }
+  .ant-btn {
+    transition: none;
+  }
+
+  .ant-layout-sider-children {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .ant-table {
+    .ant-table-thead > tr > th {
+      text-align: center;
+      background-color: #fafafa !important;
+    }
+  }
+
+  /** 表格全选 添加文字 "全选" */
+  .ant-table-thead {
+    .ant-table-selection {
+      .ant-checkbox-wrapper::after {
+        content: "\5168\9009";
+        font-size: 14px;
+        display: inline-block;
+        width: 30px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .ant-notification-notice-with-icon .ant-notification-notice-message {
+    word-break: break-all;
+  }
+
+  //进度条文字
+  .ant-progress-text {
+    width: 3em;
+  }
+  //进度条
+  .ant-progress-show-info .ant-progress-outer {
+    padding-right: calc(3em + 8px);
+    margin-right: calc(-3em - 8px);
+  }
+
+  //tabs margin
+  .ant-tabs-nav .ant-tabs-tab {
+    margin: 0 5px 0 0;
+  }
+}
