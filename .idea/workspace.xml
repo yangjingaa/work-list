@@ -173,8 +173,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/message.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="34" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="34" />
+            <state relative-caret-position="-188">
+              <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -203,6 +203,9 @@
       <find>cameraPosition</find>
       <find>Sprite</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -245,6 +248,7 @@
     <option name="width" value="1637" />
     <option name="height" value="1027" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -348,12 +352,12 @@
       <workItem from="1533710104431" duration="11733000" />
       <workItem from="1533728714215" duration="16669000" />
       <workItem from="1533801466974" duration="2876000" />
-      <workItem from="1533884083297" duration="3990000" />
+      <workItem from="1533884083297" duration="4234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40648000" />
+    <option name="totallyTimeSpent" value="40892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="1637" height="1027" extended-state="0" />
@@ -373,7 +377,7 @@
       <window_info anchor="bottom" id="RNConsole" order="8" />
       <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32834226" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="NativeScript" order="12" />
       <window_info anchor="bottom" id="Tool Output" order="13" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
@@ -625,8 +629,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/message.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="34" />
+        <state relative-caret-position="-188">
+          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
         </state>
       </provider>
     </entry>

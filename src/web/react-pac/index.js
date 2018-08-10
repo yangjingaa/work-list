@@ -5,7 +5,7 @@ class ReactPac extends Component {
     render() {
         return (
             <div>
-                <p>ReactPac</p>
+                <p>ReactPac </p>
             </div>
         );
     }
