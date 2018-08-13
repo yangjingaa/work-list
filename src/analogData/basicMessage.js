@@ -6,7 +6,10 @@ export const login = {
     userName: 'admin',
     password: 123
 };
-
+/**
+ * 侧边栏 menu数据
+ * @type {*[]}
+ */
 export const MenuData = [
     {
         action: "/animal",

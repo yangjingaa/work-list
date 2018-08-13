@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import './mock/index'
 
 import './public/css/reset.less'
 import './public/css/main.less'

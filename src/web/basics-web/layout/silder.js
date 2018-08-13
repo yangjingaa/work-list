@@ -20,8 +20,8 @@ class SliderLayout extends Component {
         collapsed: false
     };
 
-    constructor() {
-        super(props)
+    constructor(props) {
+        super(props);
     }
 
     state = {
@@ -31,6 +31,7 @@ class SliderLayout extends Component {
     };
     componentWillMount = () => {
         this.selectedMenuItem()
+
     };
     componentDidMount = () => {
     };

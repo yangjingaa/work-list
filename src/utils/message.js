@@ -1,22 +1,12 @@
-
+import { message as antMessage} from 'antd'
 
 // const modalError = Modal.error;
-const modalConfirm = Modal.confirm;
 
 /**
  * 消息配置
  */
-antdMsg.config({
+antMessage.config({
     duration: 1.5,
-});
-
-/**
- * 通知配置
- */
-notification.config({
-    placement: 'topRight',
-    top: 70,
-    duration: 5, // 单位秒
 });
 
 /**
@@ -27,10 +17,10 @@ const message = {
     /**
      * 普通信息
      * @param content
-     *
      * @param onClose
      */
     info: (content, onClose, duration) => {
+        antMessage.info(content, duration, onClose)
     },
 
     /**
@@ -39,6 +29,7 @@ const message = {
      * @param onClose
      */
     success: (content, onClose, duration) => {
+        antMessage.success(content, duration, onClose)
     },
     /**
      * 警告信息, 轻量级提示方式
@@ -46,14 +37,16 @@ const message = {
      * @param onClose
      */
     warn: (content, onClose, duration) => {
+        antMessage.warning(content, duration, onClose)
     },
     /**
-     * 发生错误
+     * 错误
      * @param content
-     * @param desc
+     * @param onClose
+     * @param duration
      */
-    innerError: (content, desc) => {
-
+    error: (content, onClose, duration) => {
+        antMessage.error(content, onClose, duration)
     },
     /**
      * 确认消息
@@ -76,11 +69,5 @@ const message = {
 
     },
 };
-
-/**
- * 使用简单函数节流 控制错误信息的弹出
- */
-message.error = tools.throttle(message.innerError, 300);
-
 
 export default message;
