@@ -25,10 +25,11 @@ const message = {
 
     /**
      * 成功后的反馈信息, 轻量级提示方式
-     * @param content
+     * @param content  数据类型不为 object array
      * @param onClose
      */
     success: (content, onClose, duration) => {
+        if (typeof content==="object") return;
         antMessage.success(content, duration, onClose)
     },
     /**

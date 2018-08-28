@@ -1,4 +1,5 @@
 import axios from 'axios';
+import {tools, message, webMessage} from '../utils/index'
 
 const axiosInstance = axios.create({
     baseURL: '/api',
@@ -9,17 +10,34 @@ const axiosInstance = axios.create({
     },
     responseType: 'json'
 });
-const token = 'token';
+const token = tools.getLocalData("token");
+/**
+ * 根据url 返回是够需要向请求header添加token
+ * @returns {boolean}
+ */
+const addTokenBasicUrl = () => {
+    const needVerificationToken = window.location.href;
+    const noNeedVerificationUrl = webMessage.verificationTokenRegs();
+    const regexp = new RegExp(noNeedVerificationUrl).test(needVerificationToken);
+    return regexp
+};
 /**
  * 请求拦截器
  * @param config
  * @returns {*}
  */
 const requestInterceptors = (config) => {
-    if(token){
+    const noNeedAddToken=addTokenBasicUrl();
+    if (noNeedAddToken) {
+        return config
+    } else if (token) {
         config.headers["Authorization"] = token;
+        return config;
+    } else {
+        message.error("token已经过期,请重新登录");
+        return false;
     }
-    return config;
+
 };
 /**
  * 响应拦截器
@@ -43,7 +61,7 @@ axiosInstance.interceptors.response.use(responseInterceptors, error => {
  * @param resolve
  * @param reject
  */
-const successRequest=(res,resolve,reject)=>{
+const successRequest = (res, resolve, reject) => {
     const {code, data, message} = res;
     if (code === 200) {
         resolve(data)
@@ -61,9 +79,9 @@ const successRequest=(res,resolve,reject)=>{
  */
 const axiosFetch = (url, method = 'GET', data = '') => {
     return new Promise((resolve, reject) => {
-        axiosInstance({url:url,method:method,data:data})
+        axiosInstance({url: url, method: method, data: data})
             .then((res) => {
-                successRequest(res,resolve,reject)
+                successRequest(res, resolve, reject)
             })
             .catch((error) => {
                 console.error(error);
@@ -81,11 +99,11 @@ const axiosUtils = {
     post(url, data) {
         return axiosFetch(url, 'POST', data)
     },
-    put(url,data){
-        return axiosFetch(url,'PUT',data)
+    put(url, data) {
+        return axiosFetch(url, 'PUT', data)
     },
-    delete(url,data){
-        return axiosFetch(url,'DELETE',data)
+    delete(url, data) {
+        return axiosFetch(url, 'DELETE', data)
     }
 
 };

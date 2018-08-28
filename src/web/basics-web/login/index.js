@@ -3,6 +3,7 @@ import {Button, Card, Input} from 'antd'
 
 import {basicRequest} from '../../../service/index'
 import message from '../../../utils/message'
+import {tools} from "../../../utils/index"
 // import message from ''
 
 import styles from './index.less'
@@ -26,25 +27,33 @@ class Login extends Component {
     };
     /**
      * 登录 并验证输入框
+     * 所做操作:
+     * a:验证输入规则 1. 全部不可为空 2.密码规则
      */
     login = () => {
         const {userName, password} = this.state;
+        if (!userName || !password) {
+            message.error("请检查输入 输入不可为空! Error");
+            return false;
+        }
         const data = {
             userName,
             password
         };
         basicRequest.login(data)
             .then((data) => {
-                // message.success(data)
-                    this.props.history.push('/game2d');
+                const {token, user} = data;
+                tools.setLocalData("user", user);
+                tools.setLocalData("token", token);
+                this.props.history.push("/react/index")
                 }
             )
-            .catch(err=>console.log(err))
+            .catch(err => console.log(err))
 
     };
 
     render() {
-        const {userName,password}=this.state;
+        const {userName, password} = this.state;
         return (
             <div className={styles.loginBox}>
                 <div className={styles.loginContent}>
@@ -74,10 +83,6 @@ class Login extends Component {
                             </div>
                         </Card.Grid>
                     </Card>
-                    {/*<div className={styles.animalBox}>*/}
-                    {/*/!*<Simple height={window.height} width={window.width}/>*!/*/}
-                    {/*/!*<BoxExample/>*!/*/}
-                    {/*</div>*/}
                 </div>
             </div>
         );

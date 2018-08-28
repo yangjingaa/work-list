@@ -5,11 +5,17 @@ import {basicsTemplate} from '../template/index'
  * @type {{url: string, type: string, template: login}}
  */
 const basicsConfig = [
+    /**
+     * 登录
+     */
     {
         url: '/api/login',
         type: 'post',
         template: basicsTemplate.login
-    }
+    },
+
 ];
+
+
 
 export default basicsConfig;

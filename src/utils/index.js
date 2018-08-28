@@ -1,11 +1,11 @@
-import fetchUtils from './fetch-utils';
 import message from './message';
 import * as tools from './tools';
 import watermark from './watermark';
+import * as webMessage from "./web-message"
 
 export {
-    fetchUtils,
     message,
     tools,
     watermark,
+    webMessage
 };

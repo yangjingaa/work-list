@@ -536,3 +536,26 @@ export const secondCount = function (second) {
     }
     return (second / 60 / 60 >>> 0) + ' 时 ' + (second / 60 % 60 >>> 0) + ' 分 ' + (second % 60) + '秒';
 };
+
+/**
+ * 判断数据类型 与所需判断类型是否为true
+ * @param value
+ * @param type
+ * @returns {boolean}
+ */
+export const judgeDataType = (value, type = "array") => {
+    const dataType = {
+        string: "[object String]",
+        number: "[object Number]",
+        object: "[object Object]",
+        func: "[object Function]",
+        boolean: "[object Boolean]",
+        array: "[object Array]",
+        date:"[object Date]"
+    };
+    if ((value || value === 0) && type) {
+        const res = Object.prototype.toString.call(value);
+        return res === dataType[type]
+    }
+    return false;
+};

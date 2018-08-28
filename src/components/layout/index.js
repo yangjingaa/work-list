@@ -1,6 +1,5 @@
 import React, {PureComponent} from 'react';
 
-import styles from './index.styl'
 
 class Layout extends PureComponent {
 

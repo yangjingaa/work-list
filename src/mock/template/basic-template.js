@@ -3,6 +3,7 @@ import Mock from 'mockjs'
 
 const Random=Mock.Random;
 
+const Token=Random.natural();
 
 const result = (code = RESULT_CODE.suc, message = '成功', data = []) => {
     return {
@@ -19,7 +20,13 @@ const result = (code = RESULT_CODE.suc, message = '成功', data = []) => {
  * 返回 登录结果 o.1几率返回登录错误状态
  */
 export const login = () => {
-    const data="登录成功";
+    const data={
+        token:Token,
+        user:{
+            name:Random.cname(),
+            id:Random.natural(100,10000)
+        }
+    };
     return result(RESULT_CODE.suc, '登录成功',data);
 };
 
