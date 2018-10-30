@@ -11,18 +11,6 @@ class ReactPac extends Component {
                 <p>master-2</p>
                 <p>master-2</p>
 
-                <p>Reac</p>
-                <p>test-2</p>
-
-                <p>Reac</p>
-                <p>Reac</p>
-                <p>Reac</p>
-                <p>Reac</p>
-                <p>Reac</p>
-                <p>Reac</p>
-                <p>Reac</p>
-                <p>Reac</p>
-                <p>Reac</p>
             </div>
         );
     }
