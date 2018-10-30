@@ -5,7 +5,19 @@ class ReactPac extends Component {
     render() {
         return (
             <div>
-                <p>test-1</p>
+                <p>Reac</p>
+                <p>Reac</p>
+                <p>test-2</p>
+                <p>test-2</p>
+                <p>test-2</p>
+                <p>test-2</p>
+                <p>test-2</p>
+
+                <p>Reac</p>
+                <p>Reac</p>
+                <p>test-2</p>
+
+                <p>Reac</p>
                 <p>Reac</p>
                 <p>Reac</p>
             </div>
