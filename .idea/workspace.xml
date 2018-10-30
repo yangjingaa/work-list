@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f0368d0-1c90-4acc-9b6c-52719e3ddf25" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/game2d/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/game2d/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/react-pac/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/react-pac/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="3f0368d0-1c90-4acc-9b6c-52719e3ddf25" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -424,12 +418,12 @@
       <workItem from="1535770081435" duration="743000" />
       <workItem from="1539682964740" duration="1868000" />
       <workItem from="1540806134371" duration="259000" />
-      <workItem from="1540870265869" duration="735000" />
+      <workItem from="1540870265869" duration="1129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105252000" />
+    <option name="totallyTimeSpent" value="105646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="23" width="1376" height="877" extended-state="6" />
