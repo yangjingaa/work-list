@@ -7,8 +7,6 @@ class ReactPac extends Component {
             <div>
                 <p>Reac</p>
                 <p>Reac</p>
-                <p>Reac</p>
-                <p>Reac</p>
             </div>
         );
     }
