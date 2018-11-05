@@ -26,20 +26,13 @@ class ReactPac extends Component {
                 <p>test22</p>
 
                 <p>test21</p>
-               <p>test23</p>
-                <p>test-1</p>
-                <p>Reac</p>
                 <p>text-1</p>               <p>test22</p>
-                <p>text-1</p>
-                <p>teReacxt-1</p>
-                <p>text</p>
-                <p>ReReacc</p>
 
                 <p>Reac</p>
-                <p>ReReacac</p>
-                <p>master-2</p>
+                <p>ssssss</p>
+                <p>mastessssr-2</p>
 
-                <p>maReacster</p>
+                <p>maReassscster</p>
 
                 <p>masteReacr-2</p>
                 <p>masReacter-2</p>
