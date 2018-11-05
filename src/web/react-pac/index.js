@@ -11,31 +11,34 @@ class ReactPac extends Component {
     render() {
         return (
             <div>
-                <p>master1</p>
-                <p>master2</p>
-                <p>master2</p>
-                <p>master3</p>                <p>master3</p>
+                <p>mastsdfs
+                    df
+                    sdfsdfsfsdfer1</p>
+                <p>mastdder2</p>
+                <p>massds
+                    sd
+                    fsd
+                    fs
+                    dfsdfsfsfsdfsddter2</p>
+                <p>mddsdsdf
+
+                    sfdfsdfdaster3
+                sdfs</p>                <p>master3</p>
 
                 <p>test21</p>
+               <p>massdfsfsfter3</p>
 
-                <p>master2</p>
-                <p>test21</p>
-               <p>master2</p>
-               <p>master3</p>
 
-                <p>test22</p>
-
-                <p>test21</p>
-                <p>text-1</p>               <p>test22</p>
-
-                <p>Reac</p>
                 <p>ssssss</p>
-                <p>mastessssr-2</p>
+                <p>dddd-2</p>
 
                 <p>maReassscster</p>
 
-                <p>masteReacr-2</p>
-                <p>masReacter-2</p>
+                <p>masteResfds
+                    f
+                    sdfacr-2</p>
+                <p>masReact
+                    sdfsdfer-2</p>
             </div>
         );
     }
