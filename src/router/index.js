@@ -7,12 +7,12 @@ import ErrorWeb from '../web/basics-web/error/index'
 
 import gameConfig from './gameComponent'
 import reactConfig from './reactComponent'
-import vueConfig from './vueComponent'
+// import vueConfig from './vueComponent'
 
 const routerConfig = [
     ...gameConfig,
     ...reactConfig,
-    ...vueConfig
+    // ...vueConfig
 ];
 
 const getRouterList = () => {
