@@ -48,19 +48,19 @@ export const MenuData = [
         id: "40",
         name: "react管理",
     },
-    {
-        action: "/vue",
-        children: [
-            {
-                action: "/vue/index",
-                children: [],
-                icon: "usb",
-                id: "41",
-                name: "vue-index",
-            },
-        ],
-        icon: "barcode",
-        id: "50",
-        name: "vue管理",
-    }
+    // {
+    //     action: "/vue",
+    //     children: [
+    //         {
+    //             action: "/vue/index",
+    //             children: [],
+    //             icon: "usb",
+    //             id: "41",
+    //             name: "vue-index",
+    //         },
+    //     ],
+    //     icon: "barcode",
+    //     id: "50",
+    //     name: "vue管理",
+    // }
 ];
