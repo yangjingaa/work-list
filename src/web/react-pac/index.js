@@ -5,8 +5,6 @@ class ReactPac extends Component {
     render() {
         return (
             <div>
-
-<<<<<<< HEAD
                <p>master1</p>
                <p>master2</p>
                <p>master3</p>
@@ -25,8 +23,9 @@ class ReactPac extends Component {
                 <p>Reac</p>
                 <p>Reac</p>
                 <p>Reac</p>
-=======
->>>>>>> ss
+                <p>master</p>
+                <p>master-2</p>
+                <p>master-2</p>
             </div>
         );
     }
